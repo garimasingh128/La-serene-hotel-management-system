@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Account</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div>
+  	<h2>Create Account</h2>
+	<h4>Become part of the best hotel services in India</h4>
+  </div>
+	
+  <form method="post" action="register.php">
+  	<?php include('errors.php'); ?>
+	<div class="input-group">
+	<label>First name</label>
+	<input type="text" placeholder="First Name" name="firstname">
+	</div>
+	<div class="input-group">
+	<label>Last name</label>
+	<input type="text" placeholder="Last Name" name="lastname">
+  	<div class="input-group">
+  	  <label>Username</label>
+  	  <input type="text" name="username" placeholder="Username" value="<?php echo $username; ?>">
+  	</div>
+  	<div class="input-group">
+  	  <label>E-mail</label>
+  	  <input type="email" placeholder="E-mail" name="email" value="<?php echo $email; ?>">
+  	</div>
+	<div class="dropdown">
+  <select class="dropbtn">Dropdown
+  <div class="dropdown-content">
+  <option>Dr</option>
+  <option>Mr</option>
+  <option>Mrs</option>
+  <option>Ms</option>
+  <option>Prof</option>
+  
+  </div>
+  </select>
+</div>
+<div class="input-group">
+<label>Phone Number</label>
+ <input type="num" placeholder="Phone" name="Phone Number">
+  	<div class="input-group">
+  	  <label>Password</label>
+  	  <input type="password" placeholder="Password" name="password_1">
+  	</div>
+  	<div class="input-group">
+  	  <label>Confirm password</label>
+  	  <input type="password" placeholder="Confirm Password" name="password_2">
+  	</div>
+	<div class="checkbox">
+  <input id="option" type="checkbox" name="field" value="option">I consent to receive news and commercial offers via email from Garimzii group brand.
+</div>
+  	<div class="input-group">
+  	  <button type="submit" class="btn" name="reg_user">Create Account</button>
+  	</div>
+  	<p>
+  		Already a member? <a href="login.php">Sign in</a>
+  	</p>
+  </form>
+</body>
+</html>
