@@ -3,7 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
 ul {
   list-style-type: none;
   margin: 0;
@@ -11,11 +10,9 @@ ul {
   overflow: hidden;
   background-color: #333;
 }
-
 li {
   float: left;
 }
-
 li a, .dropbtn {
   display: inline-block;
   color: white;
@@ -23,15 +20,12 @@ li a, .dropbtn {
   padding: 14px 16px;
   text-decoration: none;
 }
-
 li a:hover, .dropdown:hover .dropbtn {
   background-color: red;
 }
-
 li.dropdown {
   display: inline-block;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -40,7 +34,6 @@ li.dropdown {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -48,9 +41,7 @@ li.dropdown {
   display: block;
   text-align: left;
 }
-
 .dropdown-content a:hover {background-color: #f1f1f1;}
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -71,9 +62,7 @@ color: #f1f1f1;
 width: 100%;
 padding: 20px;
 }
-
 img {vertical-align: middle;}
-
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
@@ -95,18 +84,15 @@ img {vertical-align: middle;}
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
-
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
 /* Caption text */
 .text {
   color: #f2f2f2;
@@ -117,7 +103,6 @@ img {vertical-align: middle;}
   width: 100%;
   text-align: center;
 }
-
 /* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
@@ -126,7 +111,6 @@ img {vertical-align: middle;}
   position: absolute;
   top: 0;
 }
-
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
@@ -138,11 +122,9 @@ img {vertical-align: middle;}
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
   background-color: #717171;
 }
-
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -150,17 +132,14 @@ img {vertical-align: middle;}
   animation-name: fade;
   animation-duration: 1.5s;
 }
-
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
  .prev, .next,.text {font-size: 11px}
@@ -172,7 +151,6 @@ img {vertical-align: middle;}
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-
 .icon-bar a {
   display: block;
   text-align: center;
@@ -181,40 +159,32 @@ img {vertical-align: middle;}
   color: white;
   font-size: 20px;
 }
-
 .icon-bar a:hover {
   background-color: #000;
 }
-
 .facebook {
   background: #3B5998;
   color: white;
 }
-
 .twitter {
   background: #55ACEE;
   color: white;
 }
-
 .google {
   background: #dd4b39;
   color: white;
 }
-
 .linkedin {
   background: #007bb5;
   color: white;
 }
-
 .youtube {
   background: #bb0000;
   color: white;
 }
-
 .content {
   font-size: 15px;
 }
-
 </style>
 </head>
 <body>
@@ -319,14 +289,12 @@ img {vertical-align: middle;}
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
-
 function plusSlides(n) {
 showSlides(slideIndex +=n);
 }
 function currentSlide(n){
 showSlides(slideIndex = n);
 }
-
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
@@ -341,7 +309,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 </script>
 <h3 style="text-align:center;">Experience The Finest Hospitality</h3>
