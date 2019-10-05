@@ -29,9 +29,8 @@
     body, html{
         margin:0;
         padding:0;
-        background:rgba(255, 255, 255, 0.93);
+        background-image: url(room.jpg);
     }
-
     .form-all{
         margin:0px auto;
         padding-top:0px;
@@ -43,7 +42,6 @@
     .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
         color: false;
     }
-
 </style>
 
 <style type="text/css" id="form-designer-style">
@@ -104,7 +102,7 @@
   background-color: #f5f5f5;
 }
 .supernova body {
-  background-color: transparent;
+  background-image: url(room.jpg);
 }
 /*
 @width30: (unit(@formWidth, px) + 60px);
@@ -208,7 +206,7 @@
   -ms-transition-timing-function: ease;
   -o-transition-timing-function: ease;
   transition-timing-function: ease;
-  background-color: rgba(255, 251, 234, 0);
+  background-image: url(room.jpg);
 }
 /* omer */
 .form-radio-item,
@@ -933,7 +931,6 @@ li[data-type="control_image"] img {
   }
 }
 /* | */
-
 /*PREFERENCES STYLE*/
     .form-all {
       font-family: Lucida Grande, sans-serif;
@@ -1092,11 +1089,9 @@ www.jotform.com
     -webkit-box-sizing : border-box;
     box-sizing : border-box;
 }
-
 [data-type="control_head"] {
     padding-bottom : 20px;
 }
-
 /*responsive fields*/
 [data-type="control_textbox"] .form-textbox, 
 [data-type="control_fullname"] .form-textbox,
@@ -1106,7 +1101,6 @@ www.jotform.com
     width : 100% !important;
     max-width : none !important;
 }
-
 .form-textbox, .form-textarea, .form-dropdown {
     max-width : none !important;
     box-shadow : none;
@@ -1126,37 +1120,30 @@ www.jotform.com
     -moz-box-shadow : rgba(0,0,0, 0.1) 0px 0px 8px;
     -webkit-box-shadow : rgba(0,0,0, 0.1) 0px 0px 8px;
 }
-
 .form-textarea-limit>span {
     display : block;
 }
-
 [data-type="control_dropdown"] .form-input, 
 [data-type="control_dropdown"] .form-input-wide {
     width : 100%;
 }
-
 /*input focus*/
 .form-line-active input:focus, .form-line-active textarea:focus, .form-line-active select:focus {
     border-color : #C9C9C9;
     -webkit-box-shadow : rgba(0, 0, 0, 0.15) 0px 0px 8px;
 }
-
 /*reset error*/
 .form-line-error {
     box-shadow : none;
 }
-
 /*input error*/
 .form-line-error input:not(#coupon-input), .form-line-error textarea, .form-line-error select, .form-line-error .form-validation-error {
     border : 1px solid #e15353 !important;
     box-shadow : none !important;
 }
-
 .form-line-active {
     color : inherit !important;
 }
-
 /*responsive content -wide or shrink*/
 .form-label {
     width : 35% !important;
@@ -1164,33 +1151,27 @@ www.jotform.com
     -webkit-box-sizing : border-box;
     -moz-box-sizing : border-box;
 }
-
 .form-label-top {
     width : 100% !important;
 }
-
 .form-line {
     box-sizing : border-box;
     -webkit-box-sizing : border-box;
     -moz-box-sizing : border-box;
     width : 100%;
 }
-
 .form-checkbox-other-input {
     width : 80% !important;
 }
-
 .form-input {
     width : 65% !important;
     max-width : none !important;
 }
-
 .form-input-wide {
     max-width : none !important;
     display : inline-block;
     width : 100%;
 }
-
 /*single fields with sublabels*/
 [data-type="control_textbox"] .form-input-wide .form-sub-label-container, 
 [data-type="control_fullname"] .form-input-wide .form-sub-label-container,
@@ -1205,11 +1186,9 @@ www.jotform.com
     width : 100%;
     max-width : none !important;
 }
-
 [data-type="control_dropdown"] .form-input-wide {
     width : 100%;
 }
-
 /*responsive full name*/
 [data-type="control_fullname"] .form-sub-label-container {
     width : 50% !important;
@@ -1217,62 +1196,50 @@ www.jotform.com
     float : left;
     box-sizing : border-box;
 }
-
 [data-type="control_fullname"] .form-label + div .form-sub-label-container {
     display : inline-block;
     padding-right : 5px;
 }
-
 [data-type="control_fullname"] .form-label + div .form-sub-label-container + .form-sub-label-container {
     margin-right : 0;
     padding-right : 0;
     padding-left : 5px;
 }
-
 [data-type="control_fullname"] .form-label + div .form-sub-label-container + .form-sub-label-container {
     margin-right : 0;
     padding-right : 0;
     padding-left : 5px;
 }
-
 [data-type="control_fullname"] .form-label + div .form-sub-label-container + .form-sub-label-container + .form-sub-label-container {
     padding-left : 0;
     padding-right : 5px;
 }
-
 [data-type="control_fullname"] .form-label + div .form-sub-label-container + .form-sub-label-container + .form-sub-label-container + .form-sub-label-container {
     padding-left : 5px;
     padding-right : 0;
 }
-
 [data-type="control_fullname"] .form-label + div .form-sub-label-container + .form-sub-label-container  + .form-sub-label-container + .form-sub-label-container + .form-sub-label-container {
     padding-right : 5px;
     padding-left : 0;
 }
-
 #sublabel_prefix, #sublabel_first, #sublabel_middle {
     /*margin-bottom : 10px;
     */;
 }
-
 /*remove sepatators on date and phone*/
 .phone-separate, .date-separate {
     display : none;
 }
-
 /*responsive phone fields*/
 [data-type="control_phone"] input[name$="[area]"] {
     width : 100%;
 }
-
 [data-type="control_phone"] input[name$="[phone]"] {
     width : 100%;
 }
-
 [data-type="control_phone"] input[name$="[full]"] {
     width : 100%;
 }
-
 [data-type="control_phone"] .form-sub-label-container {
     width : 40%;
     float : left;
@@ -1280,71 +1247,56 @@ www.jotform.com
     margin-right : 0;
     padding-right : 12px;
 }
-
 /* responsive date time field */
 [data-type="control_datetime"] .form-textbox,
 [data-type="control_datetime"] .form-dropdown {
     width : 100%;
 }
-
 [data-type="control_datetime"] .form-sub-label-container {
     width : 28%;
     padding-left : 4px;
     box-sizing : border-box;
     margin-right : 0;
 }
-
 [data-type="control_datetime"] .form-sub-label-container:first-child {
     padding-left : 0;
 }
-
 [data-type="control_datetime"] .form-sub-label-container:first-child + .form-sub-label-container + .form-sub-label-container {
     padding-right : 0;
 }
-
 [data-type="control_datetime"] .form-sub-label-container:last-child {
     width : auto !important;
 }
-
 .allowTime-container .form-sub-label-container:last-child {
     width : 20% !important;
 }
-
 span.allowTime-container {
     width : 80%;
     padding-top : 14px;
 }
-
 .allowTime-container span.form-sub-label-container {
     width : 35%;
 }
-
 span.allowTime-container .form-dropdown {
     width : 100%;
 }
-
 span.allowTime-container > span:first-child {
     display : none;
 }
-
 span.allowTime-container > span:first-child + span {
     padding-left : 0;
 }
-
 .showAutoCalendar + label {
     display : none;
 }
-
 span.allowTime-container + span {
     padding-top : 14px;
 }
-
 /*calendar lite mode*/
 [data-type="control_datetime"] div[style*="none"] + .form-sub-label-container {
     width : 84%;
     padding-left : 0;
 }
-
 /*responsive phone field*/
 [data-type="control_phone"] .form-sub-label-container + .form-sub-label-container {
     width : 60%;
@@ -1352,7 +1304,6 @@ span.allowTime-container + span {
     padding-right : 0;
     padding-left : 12px;
 }
-
 /*responsive full address fields*/
 .form-address-city, .form-address-line, .form-address-postal, 
 .form-address-state, .form-address-table, 
@@ -1360,57 +1311,46 @@ span.allowTime-container + span {
     width : 100%;
     max-width : 100%;
 }
-
 [data-type="control_address"] input[name$="[city]"],
 [data-type="control_address"] input[name$="[postal]"] {
     width : 90% !important;
 }
-
 [data-type="control_address"] input[name$="[area]"] {
     width : 60%;
 }
-
 /*reset submit button*/
 [data-type="control_button"] {
     background : transparent !important;
 }
-
 .form-submit-button,
 .form-submit-reset,
 .form-submit-print {
     outline : none;
 }
-
 /*remove other checkbox*/
 .form-checkbox-other, 
 .form-radio-other {
     visibility : hidden !important;
 }
-
 /*shruken fields*/
 .form-line-column {
     width : 50%;
 }
-
 .form-line-column .form-label-top {
     width : 100% !important;
 }
-
 /*fix form builder display*/
 div#stage.form-all {
     max-width : none !important;
     margin-right : 0;
 }
-
 div#stage .form-input {
     width : 64% !important;
 }
-
 /*remove first pagebreak back button*/
 .form-all .page-section:first-child .form-pagebreak .form-pagebreak-back-container {
     display : none !important;
 }
-
 /* responsive pagebreak */
 .form-pagebreak-back-container {
     width : 50% !important;
@@ -1419,7 +1359,6 @@ div#stage .form-input {
     -webkit-box-sizing : border-box;
     float : left;
 }
-
 .form-pagebreak-next-container {
     width : 50% !important;
     text-align : right;
@@ -1427,32 +1366,26 @@ div#stage .form-input {
     -webkit-box-sizing : border-box;
     float : left;
 }
-
 /* radio-checkbox button make border 1px */
 .form-radio-item:not(#foo) label:after,
 .form-radio-item:not(#foo) label:before {
     border-radius : 50%;
 }
-
 .form-checkbox-item:not(#foo) label:after,
 .form-checkbox-item:not(#foo) label:before {
     border-radius : 0;
 }
-
 .form-radio-item:not(#foo) label:before,
 .form-checkbox-item:not(#foo) label:before {
     border-width : 1px;
 }
-
 /*responsive credit card on payment fields*/
 table td + td {
     padding-left : 0;
 }
-
 .form-address-table {
     width : 100%;
 }
-
 [data-type="control_stripe"] .form-address-table,
 [data-type="control_stripe"] .form-address-table .form-textbox,
 [data-type="control_authnet"] .form-address-table,
@@ -1461,20 +1394,17 @@ table td + td {
 #creditCardTable.form-address-table .form-textbox {
     max-width : none;
 }
-
 [data-type="control_stripe"] .form-address-table td:last-child .form-sub-label-container,
 [data-type="control_authnet"] .form-address-table td:last-child .form-sub-label-container,
 #creditCardTable.form-address-table td:last-child .form-sub-label-container {
     margin-left : 0;
     white-space : normal;
 }
-
 [data-type="control_stripe"] .form-address-table td .form-sub-label-container,
 [data-type="control_authnet"] .form-address-table td .form-sub-label-container,
 #creditCardTable.form-address-table td .form-sub-label-container {
     width : 100%;
 }
-
 [data-type="control_stripe"] .form-address-table .form-textbox,
 [data-type="control_stripe"] .form-address-table .form-dropdown,
 [data-type="control_authnet"] .form-address-table .form-textbox,
@@ -1484,7 +1414,6 @@ table td + td {
     width : 100%;
     visibility : visible;
 }
-
 [data-type="control_stripe"] .form-address-table tbody > tr:first-child + tr td:first-child span,
 [data-type="control_authnet"] .form-address-table tbody > tr:first-child + tr td:first-child span,
 #creditCardTable.form-address-table tbody > tr:first-child + tr td:first-child span {
@@ -1493,7 +1422,6 @@ table td + td {
     box-sizing : border-box;
     -webkit-box-sizing : border-box;
 }
-
 [data-type="control_stripe"] .form-address-table tbody > tr:first-child + tr td:first-child + td span,
 [data-type="control_authnet"] .form-address-table tbody > tr:first-child + tr td:first-child + td span,
 #creditCardTable.form-address-table tbody > tr:first-child + tr td:first-child + td span {
@@ -1502,7 +1430,6 @@ table td + td {
     box-sizing : border-box;
     -webkit-box-sizing : border-box;
 }
-
 [data-type="control_stripe"] .form-address-table tbody > tr:first-child + tr +tr td:first-child span,
 [data-type="control_stripe"] .form-address-table tbody > tr:first-child + tr +tr+tr td:first-child span,
 [data-type="control_authnet"] .form-address-table tbody > tr:first-child + tr +tr td:first-child span,
@@ -1517,7 +1444,6 @@ table td + td {
     box-sizing : border-box;
     -webkit-box-sizing : border-box;
 }
-
 [data-type="control_stripe"] .form-address-table tbody > tr:first-child + tr +tr td:first-child span + span,
 [data-type="control_stripe"] .form-address-table tbody > tr:first-child + tr +tr+tr td:first-child span + span,
 [data-type="control_authnet"] .form-address-table tbody > tr:first-child + tr +tr td:first-child span + span,
@@ -1532,17 +1458,14 @@ table td + td {
     box-sizing : border-box;
     -webkit-box-sizing : border-box;
 }
-
 .cc_ccv {
     width : 100% !important;
 }
-
 [data-type="control_stripe"] .form-address-table .form-sub-label,
 [data-type="control_authnet"] .form-address-table .form-sub-label,
 #creditCardTable.form-address-table .form-sub-label {
     visibility : visible;
 }
-
 /*cc fix city state, country */
 [data-type="control_stripe"] .form-address-table td[width="50%"]>span:first-child,
 [data-type="control_authnet"] .form-address-table td[width="50%"]>span:first-child,
@@ -1550,95 +1473,75 @@ table td + td {
     box-sizing : border-box;
     padding-right : 7px;
 }
-
 [data-type="control_stripe"] .form-address-table td[width="50%"] + td >span:first-child,
 [data-type="control_authnet"] .form-address-table td[width="50%"] + td >span:first-child,
 #creditCardTable.form-address-table td[width="50%"] + td >span:first-child {
     box-sizing : border-box;
     padding-left : 7px;
 }
-
 [data-type="control_stripe"] .form-address-table td[width="50%"] + td[width="50%"] >span:first-child,
 [data-type="control_authnet"] .form-address-table td[width="50%"] + td[width="50%"] >span:first-child,
 #creditCardTable.form-address-table td[width="50%"] + td[width="50%"] >span:first-child {
     box-sizing : border-box;
     padding-right : 0;
 }
-
 .hover-product-item:hover {
     color : inherit;
 }
-
 /*fix for braintree cc styling*/
 [data-type="control_braintree"] .form-sub-label-container {
     width : 100% !important;
     padding : 4px;
     box-sizing : border-box;
 }
-
 [data-type="control_braintree"] .form-textbox {
     width : 100%;
 }
-
 .braintree-hosted-fields {
     width : 100% !important;
     box-sizing : border-box;
     min-height : 28px;
 }
-
 /*remove bottom spacing on CC section*/
 #creditCardTable.form-address-table tbody tr + tr + tr td,
 [data-type="control_stripe"] .form-address-table tbody tr + tr + tr td,
 [data-type="control_authnet"] .form-address-table tbody tr + tr + tr td {
     padding-bottom : 0;
 }
-
 @media screen and (max-width:768px){
     .form-all {
         margin : 0 auto !important;
         width : 100% !important;
     }
-
     [data-type=control_fullname] .form-sub-label-container:first-child {
         margin-right : 0;
     }
-
 }
-
 @media screen and (max-width:480px){
     .jotform-form {
         padding : 0;
     }
-
     .form-input {
         width : 100% !important;
     }
-
     .form-label {
         width : 100% !important;
         float : none !important;
     }
-
     .form-line-column {
         width : 100% !important;
     }
-
     div.form-header-group {
         margin : 0 !important;
         padding : 24px 20px !important;
     }
-
     [data-type="control_datetime"] .form-sub-label-container {
         float : left;
     }
-
     [data-type=control_fullname] .form-sub-label-container:first-child {
         margin-right : 0;
     }
-
 }
-
-
     /* Injected CSS Code */
 </style>
 
@@ -1650,7 +1553,6 @@ table td + td {
       setTimeout(function() {
           $('input_17').hint('ex: myname@example.com');
        }, 20);
-
  JotForm.calendarMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
  JotForm.calendarDays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
  JotForm.calendarOther = {"today":"Today"};
@@ -1663,7 +1565,6 @@ table td + td {
  JotForm.displayLocalTime("hour_22", "min_22", "ampm_22");
     /*INIT-END*/
 	});
-
    JotForm.prepareCalculationsOnTheFly([null,null,{"name":"submitForm","qid":"2","text":"Submit","type":"control_button"},null,null,null,{"name":"roomType","qid":"6","text":"Room Type","type":"control_dropdown"},null,null,null,{"name":"freePickup","qid":"10","text":"Free Pickup?","type":"control_radio"},null,null,null,{"name":"clickTo14","qid":"14","text":"Hotel Booking","type":"control_head"},null,{"name":"name","qid":"16","text":"Name","type":"control_fullname"},{"name":"email17","qid":"17","text":"E-mail","type":"control_email"},{"name":"numberOf18","qid":"18","text":"Number of Guests","type":"text"},null,{"name":"departureDate20","qid":"20","text":"Departure Date","type":"control_birthdate"},null,{"name":"arrivalDate","qid":"22","text":"Arrival Date & Time","type":"control_datetime"},null,null,null,null,null,{"name":"flightNumber28","qid":"28","text":"Flight Number","type":"control_textbox"},null,{"name":"specialRequests","qid":"30","text":"Special Requests","type":"control_textarea"}]);
    setTimeout(function() {
 JotForm.paymentExtrasOnTheFly([null,null,{"name":"submitForm","qid":"2","text":"Submit","type":"control_button"},null,null,null,{"name":"roomType","qid":"6","text":"Room Type","type":"control_dropdown"},null,null,null,{"name":"freePickup","qid":"10","text":"Free Pickup?","type":"control_radio"},null,null,null,{"name":"clickTo14","qid":"14","text":"Hotel Booking","type":"control_head"},null,{"name":"name","qid":"16","text":"Name","type":"control_fullname"},{"name":"email17","qid":"17","text":"E-mail","type":"control_email"},{"name":"numberOf18","qid":"18","text":"Number of Guests","type":"text"},null,{"name":"departureDate20","qid":"20","text":"Departure Date","type":"control_birthdate"},null,{"name":"arrivalDate","qid":"22","text":"Arrival Date & Time","type":"control_datetime"},null,null,null,null,null,{"name":"flightNumber28","qid":"28","text":"Flight Number","type":"control_textbox"},null,{"name":"specialRequests","qid":"30","text":"Special Requests","type":"control_textarea"}]);}, 20); 
@@ -1755,14 +1656,14 @@ JotForm.paymentExtrasOnTheFly([null,null,{"name":"submitForm","qid":"2","text":"
             <span class="form-sub-label-container" style="vertical-align:top">
               <input type="tel" class="form-textbox validate[required, limitDate]" id="month_22" name="q22_arrivalDate[month]" size="2" data-maxlength="2" value="10" required="" aria-labelledby="label_22 sublabel_22_month" />
               <span class="date-separate" aria-hidden="true">
-                 -
+                 -
               </span>
               <label class="form-sub-label" for="month_22" id="sublabel_22_month" style="min-height:13px"> Month </label>
             </span>
             <span class="form-sub-label-container" style="vertical-align:top">
               <input type="tel" class="currentDate form-textbox validate[required, limitDate]" id="day_22" name="q22_arrivalDate[day]" size="2" data-maxlength="2" value="03" required="" aria-labelledby="label_22 sublabel_22_day" />
               <span class="date-separate" aria-hidden="true">
-                 -
+                 -
               </span>
               <label class="form-sub-label" for="day_22" id="sublabel_22_day" style="min-height:13px"> Day </label>
             </span>
@@ -1793,7 +1694,7 @@ JotForm.paymentExtrasOnTheFly([null,null,{"name":"submitForm","qid":"2","text":"
                   <option selected="" value="12"> 12 </option>
                 </select>
                 <span class="date-separate" aria-hidden="true">
-                   :
+                   :
                 </span>
                 <label class="form-sub-label" for="hour_22" id="sublabel_22_hour" style="min-height:13px"> Hour </label>
               </span>
