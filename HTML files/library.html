@@ -1,0 +1,395 @@
+<html>
+<head>
+<title>La Serene</title>
+<link href='https://fonts.googleapis.com/css?family=Condiment' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Dawning of a New Day' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Fredericka the Great' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Gloria Hallelujah' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Henny Penny' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Kavoon' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Miss Fajardose' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=La Belle Aurore' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Life Savers' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Lustria' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.uparwala {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ height:50px;
+  background: linear-gradient(to right,  #ff7f50 0%,	#ff69b4 100%)
+
+}
+li {
+  float: left;
+
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #FF6347	;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #E7717D;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  
+}
+.dropdown-content a:hover {background-color: 	;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {
+position: relative;
+max-width: 800px;
+margin: 0 auto;
+}
+
+
+img {vertical-align: middle;
+padding-left:0px;
+padding-right:0px;}
+/* Slideshow container */ 
+.slideshow-container {
+  max-width: 2400px;
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+  }
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto
+}
+
+.mySlides {
+    display: none;
+  height: 400px;
+  border: solid 1px black;
+     
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: #222428;
+    font-weight: bold;
+    font-size: 30px;
+    transition: .6s ease;
+    border-radius: 0 3px 3px 0
+}
+
+.next {
+    right: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev {
+    left: -50px;
+    border-radius: 3px 3px 3px 3px
+}
+
+.prev:hover,
+.next:hover {
+    color: #f2f2f2;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding-top: 12px;
+  padding-bottom: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #222428
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color .6s ease
+}
+
+.active,
+.dot:hover {
+    background-color: #717171
+}
+
+.column img {
+  margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.content {
+  font-size: 15px;
+}
+.upper{
+width:270px;
+height:50px;
+float:left;
+color:#C2CAD0;}
+.sidenav {
+  
+  width: 270px;
+  float:left;
+  background-color:  black; 
+
+
+}
+.sidenav a {
+  padding: 16px 16px 16px 16px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.downbbar{
+background-color:red;
+}
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  position: absolute;
+  overflow: hidden;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  top: 10%;
+  border-bottom: 1px solid #FFF;
+  border-top: 1px solid #FFF;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: scale(0,1);
+  -ms-transform: scale(0,1);
+  transform: scale(0,1);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+
+.hovereffect:hover img {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="0.6" /><feFuncG type="linear" slope="0.6" /><feFuncB type="linear" slope="0.6" /></feComponentTransfer></filter></svg>#filter');
+  filter: brightness(0.6);
+  -webkit-filter: brightness(0.6);
+}
+
+.hovereffect h1 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-size: 30px;
+  background-color: transparent;
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,-100%,0);
+  transform: translate3d(0,-100%,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  padding: 1em 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(0,100%,0);
+  transform: translate3d(0,100%,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h1 {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+</style>
+</head>
+<body>
+ <div style="background: linear-gradient(to right,  #ff7f50 0%,	#ff69b4 100%); height:100px; width:1092px; " >
+<a href="#" style="padding-left:390px;padding-top:50px;font-size:70px;text-decoration:none;font-family: 'Courgette';color:white;">La Serene</a>
+
+ </div>
+
+<ul class="uparwala">
+  <li><a href="#home" style="font-family: 'New Rocker'; color:white; font-size: 17px;"><span>&#9750;</span>
+</a></li>
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" style="font-family: 'New Rocker';; color:white; font-size: 17px;">Services</a>
+    <div class="dropdown-content">
+      <a href="#" style="font-family: 'Fredericka the Great';">Fitness Center</a>
+      <a href="#" style="font-family: 'Fredericka the Great';">Kids Club</a>
+      <a href="#" style="font-family: 'Fredericka the Great';">Health and Beauty Treatments</a>
+	  <a href="#" style="font-family: 'Fredericka the Great';">Waterfront Spa</a>
+	   <a href="#" style="font-family: 'Fredericka the Great';">Express Laundry</a>
+    </div>
+  </li>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" style="color:white; font-size: 17px;font-family: 'New Rocker';">Our Hotels</a>
+    <div class="dropdown-content">
+      <a href="file:///C:/Users/Imtiyaz/Documents/GitHub/codeworm/surf2.html" style="font-family: 'Gloria Hallelujah';">Surf Jade</a>
+      <a href="file:///C:/Users/Imtiyaz/Documents/GitHub/codeworm/felicity.html" style="font-family: 'Henny Penny';">Felicity</a>
+      <a href="file:///C:/Users/Imtiyaz/Documents/GitHub/codeworm/crossroads.html" style=" font-family: 'Josefin Slab';">Crossroads</a>
+      <a href="file:///C:/Users/Imtiyaz/Documents/GitHub/codeworm/elclasico.html" style="font-family: 'Kavoon';">El Clasico</a>
+	  <a href="file:///C:/Users/Imtiyaz/Documents/GitHub/codeworm/royalorbit.html" style="font-family: 'Megrim';">Royal Orbit</a>
+	  <a href="file:///C:/Users/Imtiyaz/Documents/GitHub/codeworm/belmorris.html" style=" font-family: 'Miss Fajardose'; font-size: 25px;">Belmorris</a>
+	</div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" style="font-family: 'New Rocker'; color:white; font-size: 17px;">Promotions</a>
+    <div class="dropdown-content">
+      <a href="#" style="font-family: 'Fredericka the Great';">Online Booking</a>
+      <a href="#" style="font-family: 'Fredericka the Great';">Meetings & Events</a>
+      <a href="#" style="font-family: 'Fredericka the Great';">Offers</a>
+    </div>
+  </li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" style="font-family: 'New Rocker'; color:white; font-size: 17px;">Restuarants & Bars</a>
+    <div class="dropdown-content">
+      
+    </div>
+  </li>
+ 
+  <li style="float:right"><a class="active" href="#about" style="font-family: 'New Rocker'; color:white; font-size: 17px;">Join Us</a></li>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" style="font-family: 'New Rocker';; font-size: 17px;">Library</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+   <li>
+    <a href="javascript:void(0)" class="dropbtn" style="font-family: 'New Rocker';; color:white; font-size: 17px;">Find us in your Location</a>
+  </li>
+</ul>
+<div class="upper" style="background-color:#FF6347;">
+ <ul style=" height:50px; font-family: 'Life Savers'; "><h3 style="color:white;">Home</h3>
+</ul>
+</div>
+<div class="upper" style="background-color:#FF6347;">
+<ul style="height:50px; font-family: 'Life Savers';"><h3 style="color:white;">Links</h3>
+</ul>
+</div>
+<div class="upper" style="background-color:#FF6347;width:550px;">
+<ul style="height:50px; font-family: 'Life Savers';"><h3 style="color:white;padding-left:100px;">Feedback Form</h3>
+</ul>
+</div>
+
+
+<div class="sidenav" style="background-color:#FF6347;>
+
+<ul class="downbar" style="height:150px;">
+<a href="#services" style=" font-family: 'Lustria'; color:#FFFFE0;">Services</a>
+  <a href="#services" style=" font-family: 'Lustria'; color:#FFFFE0;">Our Hotels</a>
+  <a href="#clients" style=" font-family: 'Lustria';color:#FFFFE0;">Promotions</a>
+  <a href="#contact" style=" font-family: 'Lustria'; color:#FFFFE0;">Restuarants & Bars</a>
+  <a href="#promo" style=" font-family: 'Lustria'; color:#FFFFE0;">Library</a>
+  </ul>
+</div>
+<div class="sidenav" style="background-color:#FF6347;>
+<ul class="downbar" style="height:150px;">
+ <a href="#about" style="font-family: 'Lustria'; color:#FFFFE0;">Abou</a>
+  <a href="#services" style="font-family: 'Lustria'; color:#FFFFE0;">Service</a>
+  <a href="#clients" style="font-family: 'Lustria'; color:#FFFFE0;">Client</a>
+  <a href="#contact" style="font-family: 'Lustria'; color:#FFFFE0;">Contac</a>
+  <a href="#contact" style="font-family: 'Lustria'; color:#FFFFE0;">Contac</a> 
+</ul> 
+ </div>
+ 
+  <div class="sidenav" style="background-color:#FF6347; height:224px; width:550px;>
+ <form>
+ 
+  </form>
+  </div>
+ 
+
+</body>
+</html>

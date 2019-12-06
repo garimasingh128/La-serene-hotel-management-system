@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>El Clasico</title>
+<link href='https://fonts.googleapis.com/css?family=Condiment' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Dawning of a New Day' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Fredericka the Great' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Gloria Hallelujah' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Henny Penny' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Josefin Slab' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Kavoon' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Miss Fajardose' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=New Rocker' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=La Belle Aurore' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Life Savers' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Lustria' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Marcellus SC' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Asul' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Meddon' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.uparwala {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+ height:50px;
+  background: linear-gradient(to right,  #ff7f50 0%,	#ff69b4 100%)
+
+}
+li {
+  float: left;
+
+}
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  
+}
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: #FF6347	;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #E7717D;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  
+}
+.dropdown-content a:hover {background-color: 	;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {
+position: relative;
+max-width: 800px;
+margin: 0 auto;
+}
+.mySlides ig{vertical-align: middle;
+padding-left:0px;
+padding-right:0px;
+}
+.mySlides .content{
+position: absolute;
+bottom:0;
+background: rgb(0,0,0);
+background: rgba(0,0,0,0.5);
+color: #f1f1f1;
+width: 100%;
+padding-left:0px;
+padding-right: 0px;
+}
+img {vertical-align: middle;
+padding-left:0px;
+padding-right:0px;}
+/* Slideshow container */ 
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+  }
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+.column img {
+  margin-top: 12px;
+}
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+} 
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+ .prev, .next,.text {font-size: 11px}
+}
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+.icon-bar a:hover {
+  background-color: #000;
+}
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+.google {
+  background: #dd4b39;
+  color: white;
+}
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+.content {
+  font-size: 15px;
+ background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); 
+  width:400px;
+  height:150px;
+  position: absolute;
+top: 555px;
+  left: 19px;
+}
+.upper{
+width:270px;
+height:50px;
+float:left;
+color:#C2CAD0;}
+.sidenav {
+  
+  width: 270px;
+  float:left;
+  background-color:  black; 
+
+
+}
+.sidenav a {
+  padding: 16px 16px 16px 16px;
+  text-decoration: none;
+  font-size: 10px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+.downbbar{
+background-color:red;
+}
+
+
+
+</style>
+</head>
+<body>
+ <div style="background: linear-gradient(to right,  #ff7f50 0%,	#ff69b4 100%); height:100px; width:1200px; " >
+<a href="#" style="padding-left:390px;padding-top:50px;font-size:70px;text-decoration:none;font-family: 'Courgette';color:white;">La Serene</a>
+
+ </div>
+
+<ul class="uparwala">
+  <li><a href="#home" style="font-family: 'New Rocker'; color:white; font-size: 17px;"><span>&#9750;</span>
+</a></li>
+ <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" style="font-family: 'New Rocker';; color:white; font-size: 17px;">Services</a>
+    <div class="dropdown-content">
+      <a href="#" style="font-family: 'Fredericka the Great';">Fitness Center</a>
+      <a href="#" style="font-family: 'Fredericka the Great';">Kids Club</a>
+      <a href="#" style="font-family: 'Fredericka the Great';">Health and Beauty Treatments</a>
+	  <a href="#" style="font-family: 'Fredericka the Great';">Waterfront Spa</a>
+	   <a href="#" style="font-family: 'Fredericka the Great';">Express Laundry</a>
+    </div>
+  </li>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" style="color:white; font-size: 17px;font-family: 'New Rocker';">Our Hotels</a>
+    <div class="dropdown-content">
+      <a href="file:///C:/Users/Imtiyaz/Documents/GitHub/codeworm/surf2.html" style="font-family: 'Gloria Hallelujah';">Surf Jade</a>
+      <a href="#" style="font-family: 'Henny Penny';">Felicity</a>
+      <a href="#" style=" font-family: 'Josefin Slab';">Crossroads</a>
+      <a href="#" style="font-family: 'Kavoon';">El Clasico</a>
+	  <a href="#" style="font-family: 'Megrim';">Royal Orbit</a>
+	  <a href="#" style=" font-family: 'Miss Fajardose'; font-size: 25px;">Belmorris</a>
+	</div>
+  </li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" style="font-family: 'New Rocker'; color:white; font-size: 17px;">Promotions</a>
+    <div class="dropdown-content">
+      <a href="#" style="font-family: 'Fredericka the Great';">Online Booking</a>
+      <a href="#" style="font-family: 'Fredericka the Great';">Meetings & Events</a>
+      <a href="#" style="font-family: 'Fredericka the Great';">Offers</a>
+    </div>
+  </li>
+    <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" style="font-family: 'New Rocker'; color:white; font-size: 17px;">Restuarants & Bars</a>
+    <div class="dropdown-content">
+      
+    </div>
+  </li>
+ 
+  <li style="float:right"><a class="active" href="#about" style="font-family: 'New Rocker'; color:white; font-size: 17px;">Join Us</a></li>
+   <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn" style="font-family: 'New Rocker';; font-size: 17px;">Library</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+   <li>
+    <a href="javascript:void(0)" class="dropbtn" style="font-family: 'New Rocker';; color:white; font-size: 17px;">Find us in your Location</a>
+  </li>
+</ul>
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+
+
+<div class="container">
+  <img src="elclasicohome.jpg" alt="Notebook" style="width:1200px;height:570px;">
+  <div class="content">
+    <div class="imgtet"><h1 style="font-family: 'Kavoon'; color:#FF6347; text-align:center;"> Oasis for Well-travelled</h1></div>
+   <div class="imgtet"> <p style="font-family:'Asul';color:#FF6347; text-align:center;"> Combining exquisite design, attentive service and exciting flavours,a heaven for travellers</p>
+  </div></div></div>
+  
+</div>
+<div style="height:150px; width:1200px;background-color:#FFFAFA;">
+<h1 style="text-align:center;font-family: 'Kavoon';color:#CD5C5C;">Why come here??</h1>
+<p style="text-align:center;font-family:'Asul';color:#CD5C5C;">Located at the foothills of Shimla, in the picturesque highlands of India is the captivating El Clasico. It is a place blessed with eternal spring, with exuberant and extraordinary gardens unfolding into immense vegetation and the hacienda’s own Rancho Jabalí, from where most of the produce served on property is sourced.</p>
+</div>
+<hr>
+<div style="height:80px;width:1200px;" ><h1 style="text-align:center;font-family:Meddon;padding-bottom:40px;">Features</h1>
+</div>
+<div class="sub">
+<img src="elclasico1.jpg" alt="outdoor" style="width:600px;height:375px; float:right;"></div>
+<div style="float:left;width:600px;height:375px; background-color:#FFFAFA;">
+<h2 style="font-family: 'Kavoon';text-align:center;">FALCONRY</h3><br>
+<p style=" font-family:'Asul';text-align:center;">
+Welcome to our falconry, where your guide awaits you to begin the private tour:
+
+The demonstration will include a flight display of different birds of prey.
+You will have a chance to see these rare and powerful birds at close quarters and you will be given a unique insight into the relationship between bird and handler in the pursuit of wild quarry.</p>
+</div>
+</div>
+<div class="sub">
+<img src="elclasico2.jpg" alt="outdoor" style="width:600px;height:375px; float:left;"></div>
+<div style="float:right;width:600px;height:375px;background-color:#FFFAFA;">
+<h2 style="text-align:center;font-family: 'Kavoon';">YOGA, RELAXATION and MEDITATION</h3><br>
+<p style=" text-align:center;font-family:'Asul';">We invite you to get away from everything surrounding you enjoying a yoga session, an ancient science that embraces the union between the body, the mind and the emotions. Practicing yoga helps to reduce stress, correct bad postural habits, ease tensions, anxiety and all types of pain.</p>
+</div>
+</div>
+<div class="sub">
+<img src="elclasico3.jpg" alt="outdoor" style="width:600px;height:375px; float:right;"></div>
+<div style="float:left; width:600px; height:375px;background-color:#FFFAFA;">
+<h2 style="font-family: 'Kavoon';text-align:center;">CRAFTED CULINARY DISHES</h3><br>
+<p style=" font-family:'Asul';text-align:center;">Dining experiences are available to suit every occasion—from a casual bite poolside to a luxury dining experience at the award-winning WP24 by Wolfgang Puck.</p>
+</div>
+</div>
+<div class="sub">
+<img src="elclasico4.jpg" alt="outdoor" style="width:600px;height:375px; float:left;"></div>
+<div style="float:right;width:600px;height:375px;background-color:#FFFAFA;">
+<h2 style="font-family: 'Kavoon';text-align:center;">RELAX, REJUVENATE AND RESTORE</h3><br>
+<p style=" font-family:'Asul';text-align:center;">Our downtown Siar Spa is the perfect sanctuary to make yourself red carpet ready.  Indulge in a luxury spa experience in an urban oasis in the heart of downtown.</p>
+</div>
+</div>
+<div class="sub">
+<img src="elclasico5.jpg" alt="outdoor" style="width:600px; height:375px; float:right;"></div>
+<div style="float:left;width:600px;height:375px;background-color:#FFFAFA;">
+<h2 style="text-align:center;font-family: 'Kavoon';">ENCHANTING WEDDINGS</h3><br>
+<p style=" text-align:center;font-family:'Asul';">Our hotels and resorts are in the world’s most treasured destinations, and offer luxury hotel services and amenities. That’s the perfect pairing for a perfect union.</p>
+</div>
+</div>
+<div class="sub">
+<img src="elclasico6.jpg" alt="outdoor" style="width:600px; height:375px;float:left;"></div>
+<div style="float:right;width:600px;height:375px;background-color:#FFFAFA;">
+<h2 style="font-family: 'Kavoon';text-align:center;">MEMORABLE MEETINGS AND EVENTS</h3><br>
+<p style=" font-family:'Asul';text-align:center">
+Whether hosting a large conference, an intimate gathering for a few colleagues or conducting business one-on-one on a championship golf course, The Luxury Collection offers unparalleled possibilities.</p>
+</div>
+</div>
+<div class="bnm" style="height:500px;width:1200px; background-color:white;"><p style="text-align:center;">
+</p></div>
+<div>
+<div class="upper" style="background-color:#FF6347;">
+ <ul style=" height:50px; font-family: 'Life Savers'; "><h3 style="color:white;">Home</h3>
+</ul>
+</div>
+<div class="upper" style="background-color:#FF6347;">
+<ul style="height:50px; font-family: 'Life Savers';"><h3 style="color:white;">Links</h3>
+</ul>
+</div>
+<div class="upper" style="background-color:#FF6347;width:660px;">
+<ul style="height:50px; font-family: 'Life Savers';"><h3 style="color:white;padding-left:100px;">Feedback Form</h3>
+</ul>
+</div>
+</div>
+<div>
+<div class="sidenav" style="background-color:#FF6347;>
+
+<ul class="downbar" style="height:150px;">
+<a href="#services" style=" font-family: 'Lustria'; color:#FFFFE0;">Services</a>
+  <a href="#services" style=" font-family: 'Lustria'; color:#FFFFE0;">Our Hotels</a>
+  <a href="#clients" style=" font-family: 'Lustria';color:#FFFFE0;">Promotions</a>
+  <a href="#contact" style=" font-family: 'Lustria'; color:#FFFFE0;">Restuarants & Bars</a>
+  <a href="#promo" style=" font-family: 'Lustria'; color:#FFFFE0;">Library</a>
+  </ul>
+</div>
+<div class="sidenav" style="background-color:#FF6347;>
+<ul class="downbar" style="height:150px;">
+ <a href="#about" style="font-family: 'Lustria'; color:#FFFFE0;">Abou</a>
+  <a href="#services" style="font-family: 'Lustria'; color:#FFFFE0;">Service</a>
+  <a href="#clients" style="font-family: 'Lustria'; color:#FFFFE0;">Client</a>
+  <a href="#contact" style="font-family: 'Lustria'; color:#FFFFE0;">Contac</a>
+  <a href="#contact" style="font-family: 'Lustria'; color:#FFFFE0;">Contac</a> 
+</ul> 
+ </div>
+ 
+  <div class="sidenav" style="background-color:#FF6347; height:224px; width:660px;>
+ <form>
+  <label for="fname" style="padding-bottom:800px;padding-left:;padding-right:;padding-top:;font-family: 'Lustria';">E-mail</label>
+    <input type="text" id="fname" name="firstname" placeholder="E-mail">
+	
+
+    
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+  </div>
+  </div>
+ 
+
+</body>
+</html>
